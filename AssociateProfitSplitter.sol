@@ -9,7 +9,6 @@ contract ProfitSplitter {
     address payable private employee_three;
     address payable owner;
 
-
     constructor (address payable _one, address payable _two, address payable _three) public {
     
     // Initialize the employyee addresses at the time of deployment. This enables not to hardcode the addresses in the program. 
@@ -18,7 +17,6 @@ contract ProfitSplitter {
         employee_three = _three;
         owner = msg.sender;
      }
-
 
     function balance() public view returns(uint) {
 
