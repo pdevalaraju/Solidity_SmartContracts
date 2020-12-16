@@ -22,7 +22,7 @@ In this sudo project we will create 3 `ProfitSplitter` contracts, each of them w
 
 * [Ganache](https://www.trufflesuite.com/ganache) a Development blockchain with prefunded account addresses which can be uused for testing purposes. 
 
-* [MetaMask] (https://metamask.io) a Crypto wallet and gateway to blockchain apps. Download the metamask Browser extension and pin it to your favorite browser and point it to the localhost:8545 by createting a 'testnet' chain, or replace the port with what you have set in your workspace.
+* [MetaMask](https://metamask.io) a Crypto wallet and gateway to blockchain apps. Download the metamask Browser extension and pin it to your favorite browser and point it to the localhost:8545 by createting a 'testnet' chain, or replace the port with what you have set in your workspace.
 
 <br>
 
@@ -359,11 +359,11 @@ Deploying the contract on localhost:8545 testnet </b> </summary>
 <details><summary> <b> 
 Deploy the contracts to a live Testnet</b> </summary>
 
-- Point MetaMask to the Kovan or Ropsten network. Ensure you have test Ether on this network. If you dont have test ether you can use [!Ropsten faucet](https://faucet.ropsten.be/) to request ether.
+- Point MetaMask to the Kovan or Ropsten network. Ensure you have test Ether on this network. If you dont have test ether you can use [Ropsten faucet](https://faucet.ropsten.be/) to request ether.
 
 - After switching MetaMask to Ropsten, deploy the contracts the same way it was deployed on localhost:8545 or local testnet and copy/keep a note of their deployed addresses. Ensure the Injected web3 is selected and 'Ropsten (3) network' is displayed below the environment field. The transactions will also be in your MetaMask history, and on the blockchain permanently to explore later. 
 
-- you can verify the transaction on [!Etherscan](https://ropsten.etherscan.io/) by searching the transactions based on the address used in our contract.
+- you can verify the transaction on [Etherscan](https://ropsten.etherscan.io/) by searching the transactions based on the address used in our contract.
 
 - <table> <tr> <td>
 - Point Metamask to Ropsten Test Network
