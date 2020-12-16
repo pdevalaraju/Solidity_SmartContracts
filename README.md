@@ -316,7 +316,7 @@ Deploying the contract </b> </summary>
 </details>
 <br>
 <details><summary> <b> 
-Deploying the contract on Remix </b> </summary>
+Deploying the contract on localhost:8545 testnet </b> </summary>
 
 - In the `Deploy` tab in Remix, deploy the contract to local Ganache chain by connecting to `Injected Web3` and ensuring MetaMask is pointed to `localhost:8545`.
 
