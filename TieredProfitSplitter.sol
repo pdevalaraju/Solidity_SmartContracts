@@ -49,7 +49,6 @@ contract TieredProfitSplitter {
         uint total;
         uint amount;
         
-
         //transfer the amount to each of the employee
          
         amount = points * tier1_share;
