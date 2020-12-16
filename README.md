@@ -377,7 +377,7 @@ Deploy the contracts to a live Testnet</b> </summary>
 
 ![Distribute Equity](Images/distribution_gas.PNG) </td> <td> 
 - Account is locked for 365 days. Use fastforward function to move the time forward by 365 days to be able to test.
-<br>
+
 ![Account Locked](Images/account_locked_ropsten.PNG) </td> </tr>
 
 <tr> <td>
