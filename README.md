@@ -43,7 +43,7 @@ In this sudo project we will create 3 `ProfitSplitter` contracts, each of them w
 
   - `owner` -- the owner of the contract or the HR department address that deposits the ether to the employees. defaulted to msg.sender in the contract contructor function.
 
-</details> <br>
+</details> 
 
 ### Contract functions: 
 
