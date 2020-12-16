@@ -59,7 +59,6 @@ contract DeferredEquityPlan {
         fakenow += 200 days;
     }
 
-
     
     function deactivate() public {
 
