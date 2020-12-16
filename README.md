@@ -115,7 +115,10 @@ Deploying the contract </b> </summary>
 - Test the `deposit` function by sending various values. Keep an eye on the `employee` balances as you send different amounts of Ether to the contract and ensure the logic is executing properly.
 
 - <table> <tr> <td>
+- deploy the contract by entering the employee addresses
 ![Deploy Profitsplitter](Images/deploy_profitsplitter.PNG) </td> <td>
+
+- enter the amount to be distributed in the 'value' field and select the denomination (wei, gwei, fenney or Ether)
 ![Transact Profitsplitter](Images/transact_profitsplitter.PNG) </td> </tr>
 
 <tr> <td>
@@ -213,12 +216,17 @@ Deploying the contract </b> </summary>
 - Test the `deposit` function by sending various values. Keep an eye on the `employee` balances as you send different amounts of Ether to the contract and ensure the logic is executing properly.
 
 - <table> <tr> <td>
+- contract compilation
 ![Compile Tieredsplitter](Images/compile_tieredsplitter.PNG) </td> <td>
+
+- deploy the contract by entering the addresses and %share for each tier
 ![Deploy Tieredsplitter](Images/deploy_tieredsplitter.PNG) </td> </tr>
 
 <tr> <td>
 
+- initiate the transaction
 ![Transact Tieredsplitter](Images/transact_tieredsplitter.PNG) </td> <td>
+
 ![confirmation](Images/deposit_tieredsplitter.PNG) </td> </tr>
 
 </table>
@@ -317,22 +325,32 @@ Deploying the contract on Remix </b> </summary>
  - Test the `deposit` function by sending various values. Keep an eye on the `employee` balances as you send different amounts of Ether to the contract and ensure the logic is executing properly.
 
 - <table> <tr> <td>
+- compile the contract
 ![Compile Deferredequity](Images/compile_deferredequity.PNG) </td> <td>
+
+- deploy the contract by entering the employee address
 ![Deploy Deferredequity](Images/deploy_deferredequity.PNG) </td> </tr>
 
 <tr> <td>
 
-![Deployed Deferredequity](Images/deployed_deferredequity.PNG) </td> <td>
+![Deployed Deferredequity](Images/deployed_deferredequity.PNG) </td> <td> 
+- Account is locked for 365 days. Use fastforward function to move the time forward by 365 days to be able to test.
+<br>
 ![Account Locked](Images/account_locked.PNG) </td> </tr>
 
 <tr> <td>
 
+- invoke fastforward two times (200 + 200 days) so the unlock period is less than fakenow and confirm the gas estimate
 ![fastforward](Images/fastforward.PNG) </td> <td>
+
+-  distribute the equity and confirm the gas
 ![Distribute Equity](Images/distribute_equity.PNG) </td> </tr>
 
 <tr> <td>
 
 ![confirmation](Images/confirmation.PNG) </td> <td>
+
+- check the distributed amount
 ![Distributed Equity](Images/distributed_shares.PNG) </td> </tr>
 </table>
 
@@ -341,11 +359,65 @@ Deploying the contract on Remix </b> </summary>
 <details><summary> <b> 
 Deploy the contracts to a live Testnet</b> </summary>
 
-- Point MetaMask to the Kovan or Ropsten network. Ensure you have test Ether on this network. If you dont have test ether you can use rospentestnet faucet to request ether.
+- Point MetaMask to the Kovan or Ropsten network. Ensure you have test Ether on this network. If you dont have test ether you can use [!Ropsten faucet](https://faucet.ropsten.be/) to request ether.
 
-- After switching MetaMask to Kovan, deploy the contracts as it was deployed on localhost:8545 or local testnet and copy/keep a note of their deployed addresses. The transactions will also be in your MetaMask history, and on the blockchain permanently to explore later.
+- After switching MetaMask to Ropsten, deploy the contracts the same way it was deployed on localhost:8545 or local testnet and copy/keep a note of their deployed addresses. Ensure the Injected web3 is selected and 'Ropsten (3) network' is displayed below the environment field. The transactions will also be in your MetaMask history, and on the blockchain permanently to explore later. 
 
-![Remix Deploy](Images/remix-deploy.png)
+- you can verify the transaction on [!Etherscan](https://ropsten.etherscan.io/) by searching the transactions based on the address used in our contract.
+
+- <table> <tr> <td>
+- Point Metamask to Ropsten Test Network
+![Point Metamast to Ropsten](Images/metamask_ropsten.PNG) </td> <td>
+
+- Deploy the contract on Ropsten Testnetwork
+![Ropsten testnet Deploy](Images/ropsten_deploy.PNG) </td> </tr>
+
+<tr> <td>
+- try distributing the equity before the unlock period/vested period
+
+![Distribute Equity](Images/distribution_gas.PNG) </td> <td> 
+- Account is locked for 365 days. Use fastforward function to move the time forward by 365 days to be able to test.
+<br>
+![Account Locked](Images/account_locked_ropsten.PNG) </td> </tr>
+
+<tr> <td>
+
+- invoke fastforward two times (200 + 200 days) so the unlock period is less than fakenow and confirm the gas estimate
+![fastforward](Images/fastforward_ropsten.PNG) </td> <td>
+
+![fastforward](Images/fastforward_ropsten_2.PNG) </td> </tr>
+
+
+<tr> <td>
+
+-  distribute the equity and confirm the gas
+
+![Distribute Equity](Images/distribution_gas.PNG) </td> </tr>
+
+<tr> <td>
+
+- check the distributed shares before the transaction
+![Distributed Equity balance](Images/distributed_shares_ropsten.PNG) </td> 
+
+<td>
+
+![confirmation](Images/ropsten_confirmation.PNG) </td> <td>
+
+- check the distributed shares after the transaction
+![Distributed Equity balance](Images/distributed_shares_ropsten_2.PNG) </td> </tr>
+
+<tr> <td>
+
+- check the HR account Balance on metamask after the transaction and the transaction history
+![HR account balance](Images/account_balance.PNG) </td> <td>
+
+- check the Transaction history on Ropsten Etherscan using HR account address. 
+
+![Etherscan Transactions](Images/tx_etherscan.PNG) </td> <td>
+
+
+
+</table>
 
 </details>
 
